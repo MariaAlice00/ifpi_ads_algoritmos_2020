@@ -1,3 +1,5 @@
+# Leia LimiteSuperior e LimiteInferior e escreva todos os números primos entre os limites lidos.
+
 primeiro = int(input('Primeiro: '))
 ultimo = int(input('Último: '))
 
@@ -14,4 +16,3 @@ while primeiro < ultimo:
         print(primeiro, end=' ')
         x = x + 1
     primeiro = primeiro + 1
-
