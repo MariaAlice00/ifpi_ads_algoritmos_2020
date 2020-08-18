@@ -1,6 +1,6 @@
 # Leia N e uma lista de N números e escreva a soma e a média de todos os números da lista.
-from random import randint
 
+from random import randint
 n = int(input('>>> '))
 contador = 1
 soma = 0
@@ -12,7 +12,7 @@ while True:
         break
 
     print(num, end=' ')
-
     soma = soma + num
+
 print('\nSoma = {}'.format(soma))
 print('Média = {}'.format(soma / n))
