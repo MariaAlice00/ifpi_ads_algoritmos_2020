@@ -24,11 +24,11 @@ def main():
             total_a += 1
         elif voto == 2:
             total_b += 1
-        if voto == 3:
+        elif voto == 3:
             total_c += 1
-        if voto == 9:
+        elif voto == 9:
             total_nulos += 1
-        if voto == 0:
+        elif voto == 0:
             total_branco += 1
 
     print('******** RESULTADO ********')
