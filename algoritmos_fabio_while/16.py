@@ -1,18 +1,21 @@
 # Leia um número N, calcule e escreva os N primeiros termos de seqüência de Fibonacci (0,1,1,2,3,5,8,...). O valor lido para N sempre será maior ou igual a 2.
 
-print('-'*10 + 'SEQUÊNCIA DE FIBONACCI' + '-'*10)
-num = int(input('>>> '))
+def main():
+    num = int(input('>>> '))
 
-t1 = 0
-t2 = 1
-print('{} -> {}'.format(t1, t2), end='')
+    a = 0
+    b = 1
+    print('{} -> {}'.format(a, b), end='')
 
-'''contador = 3, porque ja colocamos 2 termos'''
-contador = 3
+    contador = 3
 
-while contador <= num:
-    t3 = t1 + t2
-    t1 = t2
-    t2 = t3
-    print(' -> {}'.format(t3), end='')
-    contador = contador + 1
+    while contador <= num:
+        c = a + b
+        a = b
+        b = c
+
+        print(' -> {}'.format(c), end='')
+
+        contador = contador + 1
+
+main()
