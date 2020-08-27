@@ -2,13 +2,13 @@ def main():
     n = int(input('>>> '))
 
     x = 1
-    soma = 0
+    s = 0
 
     while x <= n:
         y = 1 / x
-        soma = soma + y
+        s = s + y
         x = x + 1
     
-    print(soma)
+    print('S = {}'.format(s))
 
 main()
