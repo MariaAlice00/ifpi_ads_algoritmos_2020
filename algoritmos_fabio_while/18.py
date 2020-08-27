@@ -3,15 +3,16 @@ def main():
 
     n = 1
     d = N
-    soma = 0
+    s = 0
 
     while n <= N:
         y = n / d
-        soma += y
+        s += y
 
         n += 1
         d -= 1
 
-    print(soma)
+    print('S = {}'.format(s))
+
 
 main()
