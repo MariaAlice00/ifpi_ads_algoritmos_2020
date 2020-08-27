@@ -2,19 +2,20 @@ def main():
     N = int(input('>>> '))
 
     d = 1
-    calculo = 0
+    s = 0
     contador = 0
 
     while d <= N:
         y = 1 / d
         contador = contador + 1 
+        
         if contador % 2 != 0:
-            calculo = calculo - y
+            s = s - y
         else:
-            calculo = calculo + y
+            s = s + y
 
         d += 1
 
-    print(calculo * -1)
+    print('S = {}'.format(s * -1))
 
 main()
