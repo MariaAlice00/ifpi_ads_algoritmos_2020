@@ -7,8 +7,7 @@ def main():
 
     p = A0
     while p < limite:
-        if p % r == 0:
-            print(p)
-        p +=1
+        print(p)
+        p += r
 
 main()
