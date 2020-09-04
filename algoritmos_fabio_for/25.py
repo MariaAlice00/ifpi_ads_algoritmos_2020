@@ -25,7 +25,6 @@ def main():
     print('Obrigada por votar!!!')
 
 
-
 def voto(n):
     total_a = 0
     total_b = 0
