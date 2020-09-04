@@ -16,7 +16,6 @@ def main():
         num_dependentes = int(input('Número de dependentes: '))
         print('-'*20)
 
-
         inss, ir, salario_liquido = calculo(num_horas, num_dependentes)
 
         print('INSS: R$ {:.2f}'.format(inss))
@@ -25,4 +24,5 @@ def main():
 
     print('FIM')
 
+    
 main()
