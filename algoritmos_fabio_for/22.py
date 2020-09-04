@@ -13,7 +13,6 @@ def main():
 
 
 def maior_menor(n):
-    contador = 1
     num1 = 0
     num2 = 0
     maior = 0
@@ -26,7 +25,6 @@ def maior_menor(n):
         nome = str(input('Nome: '))
         peso = float(input('Peso(kg): '))
 
-        contador += 1
         if peso > maior:
             maior = peso
             num1 = num
