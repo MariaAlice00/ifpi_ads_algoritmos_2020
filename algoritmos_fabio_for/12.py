@@ -4,8 +4,10 @@ def main():
     from random import randint
 
     n = int(input('>>> '))
+    
     contador = 1
     soma = 0
+    
     for c in range(1, n+1):
         num = randint(0, 10)
         print(num, end=' ')
