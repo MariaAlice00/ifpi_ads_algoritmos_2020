@@ -1,10 +1,18 @@
+def minuscula(posicao):
+    return ord(posicao) >= 97 and ord(posicao) <= 122
+
+
+def maiuscula(posicao):
+    return ord(posicao) >= 65 and ord(posicao) <= 90
+
+
 def rotate_world(string, rotacao):
     i = 0
     while i < len(string):
         posicao = string[i]
         codigo = ord(posicao) + rotacao
 
-        if posicao.islower() == True:
+        if minuscula(posicao):
             if codigo > 122:
                 novo_codigo = codigo - 26
             elif codigo < 97:
@@ -12,7 +20,7 @@ def rotate_world(string, rotacao):
             else:
                 novo_codigo = codigo
 
-        elif posicao.isupper() == True:
+        elif maiuscula(posicao):
             if codigo > 90:
                 novo_codigo = codigo - 26
             elif codigo < 65:
@@ -24,6 +32,7 @@ def rotate_world(string, rotacao):
         print(nova_string, end='')
         
         i += 1
+
 
 def main():
     print('>>> Que palavra você quer rotacionar?')
