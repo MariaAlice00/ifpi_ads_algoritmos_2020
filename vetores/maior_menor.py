@@ -9,29 +9,35 @@ def main():
         vetor.append(num)
 
     print(vetor)
-    maior = maior_elemento(vetor)
-    menor = menor_elemento(vetor)
-    print('Maior elemento: {}'.format(maior))
-    print('Menor elemento: {}'.format(menor))
+    maior, pos_maior = maior_elemento(vetor)
+    menor, pos_menor = menor_elemento(vetor)
+    print('Maior elemento: {} -> Posição {}'.format(maior, pos_maior))
+    print('Menor elemento: {} -> Posição {}'.format(menor, pos_menor))
 
 
 def maior_elemento(vetor):
     maior = 0
+    i = 0
     for num in vetor:
         if num > maior:
             maior = num
+            pos_maior = i
+        i += 1
     
-    return maior
+    return maior, pos_maior
 
 
 def menor_elemento(vetor):
-    maior = maior_elemento(vetor)
+    maior, pos_maior = maior_elemento(vetor)
     menor = maior
+    i = 0
     for num in vetor:
         if num < menor:
             menor = num
+            pos_menor = i
+        i += 1
 
-    return menor
+    return menor, pos_menor
 
 
 if __name__ == "__main__":
