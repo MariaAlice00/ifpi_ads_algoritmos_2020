@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Múltiplos de 3</h1>
+    <label>Limite: </label>
+    <input id="numero" type="number">
+    <button id="botao">Calcular</button>
+
+    <ul id="multiplos">
+    
+    </ul>
+
+    <script>
+        let botao = document.getElementById('botao'); 
+        let campo_numero = document.getElementById('numero')
+        let lista = document.getElementById('multiplos')
+
+        const manipular_clique = function(){
+            let numero = campo_numero.value
+            let inicio = 1
+            let alvo = numero
+
+            while (inicio <= alvo) {
+                if (inicio % 3 == 0) {
+                    let item = document.createElement('li')
+                    item.textContent = inicio
+
+                    lista.appendChild(item)
+                }
+
+                inicio = inicio + 1
+            }
+        }
+
+        botao.addEventListener('click', manipular_clique)
+    </script>
+</body>
+</html>

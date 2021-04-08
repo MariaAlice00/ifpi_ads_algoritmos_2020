@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="#">
+        <input id="inferior" type="number" placeholder="Limite Inferior">
+        <input id="superior" type="number" placeholder="Limite Superior">
+        <input id="botao" type="submit" value="Mostrar Primos"> 
+    </form>
+
+    <script>
+        let cx_inferior = document.getElementById('inferior')
+        let cx_superior = document.getElementById('superior')
+        let botao = document.getElementById('botao')
+
+        function clicou(){
+            let inferior = Number(cx_inferior.value)
+            let superior = Number(cx_superior.value)
+
+            alert(`Intervalo ${inferior} - ${superior}`)
+        }
+
+        botao.addEventListener('click', clicou)
+
+    </script>
+
+</body>
+</html>
